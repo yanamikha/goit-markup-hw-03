@@ -13,11 +13,13 @@
 }
 h1,
 h2,
-h3 {
+h3,
+ul {
   margin: 0;
   padding: 0;
 }
-p {
+p,
+pre {
   margin: 0;
   padding: 0;
 }
@@ -35,7 +37,6 @@ body {
   min-width: 1600px;
 }
 .container {
-  display: inline-block;
   padding: 0px 215px 0px 215px;
 }
 .team-container {
@@ -59,6 +60,7 @@ body {
   text-decoration: none;
 }
 .logo {
+  display: inline-block;
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 26px;
@@ -154,41 +156,37 @@ h1 {
   color: #ffffff;
   align-self: center;
 }
-h2 {
+.our-work {
   text-align: center;
   color: var(--black-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   letter-spacing: 0.03em;
-}
-.our-work {
   margin-top: 94px;
 }
 .our-work-list {
   margin-top: 50px;
   display: flex;
-  justify-items: space-between;
-  padding: 0px 0 94px 0;
+  justify-content: space-between;
 }
 .our-work-list .item:nth-child(n + 2) {
   margin-left: 30px;
 }
-.team h3 {
+.employee-card h3 {
   color: var(--black-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
   margin-top: 30px;
 }
-.team span {
+.employee-card span {
   color: var(--dark-gray-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
-  margin: auto;
   min-width: 100px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .team p {
   color: var(--dark-gray-color);
@@ -265,11 +263,18 @@ h2 {
 .buttons-list {
   display: flex;
   justify-content: center;
+  min-width: 611px;
+  min-height: 54px;
+}
+.buttons-list li:nth-child(n + 2) {
+  margin-left: 14px;
 }
 .buttons-list button {
   background-color: var(--light-gray-color);
   border-radius: 4px;
   border-color: unset;
+  min-width: 73px;
+  min-height: 38px;
 }
 .buttons-list a {
   text-decoration: none;
@@ -286,6 +291,7 @@ h2 {
 }
 .works-cards {
   display: flex;
+  margin-top: 50px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -295,7 +301,9 @@ h2 {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
+.works-cards li {
+  width: calc((100%-490px) / 3);
+}
 .works-cards p {
   font-weight: 400;
   font-size: 16px;
@@ -303,7 +311,7 @@ h2 {
   letter-spacing: 0.06em;
   color: var(--dark-gray-color);
   display: inline-block;
-  width: 270px;
+  min-width: 270px;
 }
 .virtues p {
   padding-top: 10px;
@@ -314,11 +322,18 @@ h2 {
   color: var(--dark-gray-color);
 }
 .works-cards li {
-  width: 370px;
-  border: 1px solid #eeeeee;
+  min-width: 370px;
   box-sizing: border-box;
 }
-
+.our-works {
+  min-width: 1170px;
+  min-height: 1360px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.cards-describtion {
+  margin: 20px 24px;
+}
 .location {
   text-decoration: none;
   font-weight: 400;
@@ -328,13 +343,11 @@ h2 {
   font-family: var(--secondary-font);
 }
 footer {
-  margin-top: 94px;
   background-color: #2f303a;
-  width: 1600px;
+  min-width: 1600px;
   height: 252px;
   top: 1628px;
 }
-
 footer .right-part,
 .location {
   color: #ffffff;
@@ -345,4 +358,18 @@ address {
 footer .address-item {
   color: rgba(255, 255, 255, 0.6);
   font-family: var(--secondary-font);
+}
+footer address {
+  min-width: 231px;
+  margin-top: 20px;
+}
+footer .address-item:nth-child(n + 2) {
+  display: flex;
+  padding-top: 9px;
+}
+.footer-container {
+  min-height: 252px;
+  min-width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
