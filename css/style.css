@@ -13,11 +13,11 @@
 }
 h1,
 h2,
-h3{
+h3 {
   margin: 0;
   padding: 0;
 }
-p{
+p {
   margin: 0;
   padding: 0;
 }
@@ -31,25 +31,24 @@ pre {
 main {
   font-family: var(--secondary-font);
 }
-body{
+body {
   min-width: 1600px;
 }
-.container{
+.container {
   display: inline-block;
   padding: 0px 215px 0px 215px;
-  outline: solid 1px black;
 }
-.team-container{
+.team-container {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
-.our-team{
-  min-height:648px ;
-  outline: 1px solid black ;
+.our-team {
+  min-height: 648px;
   padding-top: 94px;
 }
-.navigation-bar{ 
-  display:flex;
+.navigation-bar {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
@@ -83,11 +82,10 @@ header .logo-right-part {
 }
 .navigation-list,
 .contacts {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: var(--secondary-font);
-  
 }
 
 .contact {
@@ -102,21 +100,21 @@ header .logo-right-part {
   letter-spacing: 0.02em;
 }
 .navigation-list .item:nth-child(1) {
-margin-left: 93px;
+  margin-left: 93px;
 }
 .navigation-list .item:nth-child(2) {
   margin-left: 50px;
-  }
+}
 .link-without-underline {
   color: var(--black-color);
 }
-nav{
-  display:flex; 
+nav {
+  display: flex;
 }
-.mail{
+.mail {
   min-width: 135px;
 }
-.phone{
+.phone {
   min-width: 122px;
 }
 .contact {
@@ -128,8 +126,8 @@ nav{
   color: var(--dark-gray-color);
   font-style: normal;
 }
-.contacts li:nth-of-type(2){
-margin-left: 50px;
+.contacts li:nth-of-type(2) {
+  margin-left: 50px;
 }
 .contact:hover,
 .contact:focus {
@@ -141,6 +139,8 @@ a:focus {
 }
 li {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   width: 696px;
@@ -154,7 +154,7 @@ h1 {
   color: #ffffff;
   align-self: center;
 }
-h2 { 
+h2 {
   text-align: center;
   color: var(--black-color);
   font-weight: 700;
@@ -162,16 +162,24 @@ h2 {
   line-height: 1.167;
   letter-spacing: 0.03em;
 }
-
-.our-work-list{
+.our-work {
+  margin-top: 94px;
+}
+.our-work-list {
+  margin-top: 50px;
   display: flex;
-  justify-content: center;
+  justify-items: space-between;
+  padding: 0px 0 94px 0;
+}
+.our-work-list .item:nth-child(n + 2) {
+  margin-left: 30px;
 }
 .team h3 {
   color: var(--black-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
+  margin-top: 30px;
 }
 .team span {
   color: var(--dark-gray-color);
@@ -188,37 +196,43 @@ h2 {
   line-height: 1.87;
   font-weight: 400;
 }
-.employee-card{ 
-display: flex;
-flex-direction: column;
-justify-items: center;
-min-height: 368px;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+.employee-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.employee-card:nth-child(n+2){ 
-margin-left: 30px;
+.employee-card:nth-child(n + 2) {
+  margin-left: 30px;
 }
 .virtues h3 {
   text-transform: uppercase;
+  line-height: 1.172;
 }
-.virtues-list{
+.virtues-list {
   display: flex;
   justify-content: space-between;
   padding: 0px;
   margin: 94px 0 0 0;
 }
-.virtues-item{
-font-weight:red;
-min-height: 215px;
+.virtues-item {
+  display: inline-block;
+  font-weight: bold;
+  min-height: 101px;
+  min-width: 270px;
+}
+.virtues-list li:nth-child(n + 2) {
+  margin-left: 30px;
 }
 .hero {
-
   background-color: #2f303a;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
-  margin-top:  200px 452px 280px 452px ;
+  padding: 200px 452px 200px 452px;
 }
 .blue-button {
   background-color: var(--accent-color);
@@ -228,7 +242,7 @@ min-height: 215px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   align-self: center;
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 10px 32px;
   min-width: 200px;
   border: none;
@@ -242,16 +256,14 @@ min-height: 215px;
   font-style: normal;
   color: var(--dark-gray-color);
 }
-.our-work-list .item:nth-child(n+1){
-  margin-left: 30px;
-}
+
 .address-item:hover,
 .address-item:focus,
 .current-page {
   color: var(--accent-color);
 }
-.buttons-list{
-    display: flex;
+.buttons-list {
+  display: flex;
   justify-content: center;
 }
 .buttons-list button {
@@ -272,7 +284,7 @@ min-height: 215px;
 .buttons-list button:focus {
   background-color: var(--accent-color);
 }
-.works-cards{
+.works-cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -289,15 +301,16 @@ min-height: 215px;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--dark-gray-color); 
+  color: var(--dark-gray-color);
   display: inline-block;
   width: 270px;
 }
 .virtues p {
+  padding-top: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   color: var(--dark-gray-color);
 }
 .works-cards li {
