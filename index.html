@@ -1,6 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -16,7 +20,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="navigation-bar">
+    <header class="navigation-bar container">
       <nav>
         <a class="logo" href="./index.html">
           <span class="logo-left-part">Web</span>
@@ -35,14 +39,14 @@
       <ul class="contacts">
         <li>
           <address>
-            <a class="contact" href="mailto:info@devstudio.com"
+            <a class="contact mail" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </address>
         </li>
         <li>
           <address>
-            <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact phone" href="tel:+380961111111">+38 096 111 11 11</a>
           </address>
         </li>
       </ul>
@@ -52,32 +56,31 @@
         <h1>Эффективные решения для вашего бизнеса</h1>
         <button class="blue-button" type="button">Заказать услугу</button>
       </section>
-      <section title="our virtues" class="virtues">
-        <h2 style="visibility: hidden">Наши преимущества</h2>
-        <ul class="virtues-list">
-          <li>
+      <section title="our virtues" class="virtues container">
+        <h2 style="visibility: hidden; height: 0px;">Наши преимущества</h2>
+        <ul class="virtues-list container">
+          <li class="virtues-item">
             <h3>Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="virtues-item">
             <h3>Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="virtues-item">
             <h3>Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-
-          <li>
+          <li class="virtues-item">
             <h3>Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
@@ -86,7 +89,7 @@
           </li>
         </ul>
       </section>
-      <section title="What we are doing">
+      <section title="What we are doing" class="container">
         <h2 class="our-work">Чем мы занимаемся</h2>
         <ul class="our-work-list">
           <li class="item">
@@ -116,10 +119,11 @@
         </ul>
       </section>
       <section title="Our team">
+        <div class="our-team">
         <h2>Наша команда</h2>
-        <ul class="team">
-          <li>
-            <div class="employee-card">
+        <ul class="team-container">
+          <li class="employee-card">
+           
             <img
               src="./image/igor.jpg"
               alt="Фотография Игоря Демьяненко"
@@ -128,10 +132,9 @@
             />
             <h3>Игорь Демьяненко</h3>
             <span>Product Designer</span>
-            </div>
+          
           </li>
-          <li>
-            <div class="employee-card">
+          <li class="employee-card">
             <img
               src="./image/olga.jpg"
               alt="Фотография Ольги Репиной"
@@ -140,7 +143,6 @@
             />
             <h3>Ольга Репина</h3>
             <span>Frontend Developer</span>
-            </div>
           </li>
           <li>
             <div class="employee-card">
@@ -155,6 +157,7 @@
             </div>
           </li>
           <li>
+            <div class="employee-card">
             <img
               src="./image/michael.jpg"
               alt="Фотография Михаила Ермакова"
@@ -165,9 +168,11 @@
             <span>UI Designer</span>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer>
+      <div class="container">
       <a class="logo" href="./index.html">
         <span class="logo-left-part">Web</span>
         <span class="logo-right-part">Studio</span>
@@ -185,6 +190,7 @@
           <pre>+38 096 111 11 11</pre>
         </a>
       </address>
+      </div>
     </footer>
   </body>
 </html>
