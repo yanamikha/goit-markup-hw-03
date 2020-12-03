@@ -46,7 +46,7 @@ body {
 }
 .our-team {
   min-height: 648px;
-  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .navigation-bar {
   display: flex;
