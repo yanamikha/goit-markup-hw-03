@@ -37,7 +37,9 @@ body {
   min-width: 1600px;
 }
 .container {
-  padding: 0px 215px 0px 215px;
+  padding-right: 215px;
+  padding-left: 215px;
+  background: #ffffff;
 }
 .team-container {
   margin-top: 50px;
@@ -52,7 +54,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  min-height: 80px;
 }
 .navigation-list .item:hover,
 .navigation-list .item:focus {
@@ -102,7 +104,11 @@ header .logo-right-part {
   letter-spacing: 0.02em;
 }
 .navigation-list .item:nth-child(1) {
-  margin-left: 93px;
+  margin-left: 50px;
+}
+.border-bottom {
+  border: 1px solid;
+  border-color: #cecece;
 }
 .navigation-list .item:nth-child(2) {
   margin-left: 50px;
@@ -165,6 +171,10 @@ h1 {
   letter-spacing: 0.03em;
   margin-top: 94px;
 }
+.border-around {
+  border: 1px solid;
+  border-color: #eeeeee;
+}
 .our-work-list {
   margin-top: 50px;
   display: flex;
@@ -206,7 +216,8 @@ h1 {
 .employee-card:nth-child(n + 2) {
   margin-left: 30px;
 }
-.virtues h3 {
+.virtues-item h3 {
+  font-size: 16px;
   text-transform: uppercase;
   line-height: 1.172;
 }
@@ -221,6 +232,7 @@ h1 {
   font-weight: bold;
   min-height: 101px;
   min-width: 270px;
+  font-size: 14px;
 }
 .virtues-list li:nth-child(n + 2) {
   margin-left: 30px;
@@ -230,7 +242,8 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 200px 452px 200px 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .blue-button {
   background-color: var(--accent-color);
@@ -301,8 +314,8 @@ h1 {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.works-cards li {
-  width: calc((100%-490px) / 3);
+.works-cards li:nth-child(n + 4) {
+  margin-top: 30px;
 }
 .works-cards p {
   font-weight: 400;
@@ -321,6 +334,7 @@ h1 {
   letter-spacing: 0.05em;
   color: var(--dark-gray-color);
 }
+
 .works-cards li {
   min-width: 370px;
   box-sizing: border-box;
@@ -370,7 +384,6 @@ footer .address-item:nth-child(n + 2) {
 .footer-container {
   min-height: 252px;
   min-width: 1600px;
-  margin-top: ;
   padding-top: 60px;
   padding-bottom: 60px;
 }
