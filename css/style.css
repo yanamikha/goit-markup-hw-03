@@ -33,14 +33,16 @@ pre {
 main {
   font-family: var(--secondary-font);
 }
-body {
-  min-width: 1600px;
-}
+
+
 .container {
-  padding-right: 215px;
-  padding-left: 215px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   background: #ffffff;
-}
+  }
 .team-container {
   margin-top: 50px;
   display: flex;
@@ -107,7 +109,7 @@ header .logo-right-part {
   margin-left: 50px;
 }
 .border-bottom {
-  border: 1px solid;
+  border-bottom: 1px solid;
   border-color: #cecece;
 }
 .navigation-list .item:nth-child(2) {
@@ -356,9 +358,7 @@ h1 {
 }
 footer {
   background-color: #2f303a;
-  min-width: 1600px;
   height: 252px;
-  top: 1628px;
 }
 footer .right-part,
 .location {
@@ -381,8 +381,8 @@ footer .address-item:nth-child(n + 2) {
 }
 .footer-container {
   min-height: 252px;
-  min-width: 1600px;
   padding-top: 60px;
+  /*padding-left: 215px;*/
   padding-bottom: 60px;
   background: #2f303a;
 }
