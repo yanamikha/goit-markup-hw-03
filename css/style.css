@@ -48,7 +48,9 @@ body {
 }
 .our-team {
   min-height: 648px;
+  padding-top: 194px;
   padding-bottom: 94px;
+  background: #f5f4fa;
 }
 .navigation-bar {
   display: flex;
@@ -163,21 +165,26 @@ h1 {
   align-self: center;
 }
 .our-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-work h2 {
   text-align: center;
   color: var(--black-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   letter-spacing: 0.03em;
-  margin-top: 94px;
 }
 .border-around {
   border: 1px solid;
   border-color: #eeeeee;
   margin-top: 30px;
 }
+.our-works-container {
+  padding-top: 50px;
+}
 .our-work-list {
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -217,6 +224,9 @@ h1 {
 .employee-card:nth-child(n + 2) {
   margin-left: 30px;
 }
+.virtues {
+  padding-top: 94px;
+}
 .virtues-item h3 {
   font-size: 16px;
   text-transform: uppercase;
@@ -226,7 +236,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 0px;
-  margin: 94px 0 0 0;
 }
 .virtues-item {
   display: inline-block;
@@ -278,7 +287,6 @@ h1 {
   display: flex;
   justify-content: center;
   min-width: 611px;
-  min-height: 54px;
 }
 .buttons-list li:nth-child(n + 2) {
   margin-left: 14px;
@@ -286,9 +294,9 @@ h1 {
 .buttons-list button {
   background-color: var(--light-gray-color);
   border-radius: 4px;
-  border-color: unset;
-  min-width: 73px;
-  min-height: 38px;
+  border: none;
+  padding: 6px 22px;
+  font-size: 16px;
 }
 .buttons-list a {
   text-decoration: none;
@@ -302,10 +310,12 @@ h1 {
 .buttons-list button:hover,
 .buttons-list button:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
+  outline: none;
 }
 .works-cards {
   display: flex;
-  margin-top: 20px;
+  padding-top: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -340,8 +350,8 @@ h1 {
 .our-works {
   min-width: 1170px;
   min-height: 1360px;
-  padding-top: 94px;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .cards-describtion {
   margin: 20px 24px;
@@ -367,14 +377,15 @@ footer .right-part,
 address {
   font-style: unset;
 }
+.address-block {
+  min-width: 231px;
+  margin-top: 20px;
+}
 footer .address-item {
   color: rgba(255, 255, 255, 0.6);
   font-family: var(--secondary-font);
 }
-footer address {
-  min-width: 231px;
-  margin-top: 20px;
-}
+
 footer .address-item:nth-child(n + 2) {
   display: flex;
   padding-top: 9px;
