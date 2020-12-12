@@ -34,24 +34,22 @@ main {
   font-family: var(--secondary-font);
 }
 
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background: #ffffff;
-  }
+
+  background-color: transparent;
+}
 .team-container {
-  margin-top: 50px;
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
 }
 .our-team {
   min-height: 648px;
-  padding-top: 194px;
-  padding-bottom: 94px;
   background: #f5f4fa;
 }
 .navigation-bar {
@@ -350,13 +348,11 @@ h1 {
   box-sizing: border-box;
 }
 .our-works {
-  min-width: 1170px;
-  min-height: 1360px;
   padding-bottom: 94px;
   padding-top: 94px;
 }
 .cards-describtion {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 .location {
   text-decoration: none;
@@ -393,7 +389,6 @@ footer .address-item:nth-child(n + 2) {
 .footer-container {
   min-height: 252px;
   padding-top: 60px;
-  /*padding-left: 215px;*/
   padding-bottom: 60px;
   background: #2f303a;
 }
